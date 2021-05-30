@@ -1,0 +1,516 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PLCount</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'mainpage/assets/img/icon.png' %}" rel="icon">
+  <link href="{% static 'mainpage/assets/img/icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'mainpage/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mainpage/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'mainpage/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mainpage/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'mainpage/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'mainpage/assets/css/style.css' %}" rel="stylesheet">
+
+    
+  <style>
+    .formheadercolor{
+    background: #0188EE;
+    color:white;
+    }
+    .formbodycolor{
+    background: #B1B8BA;
+    }
+    .formtextcolor{
+    color: black;
+    }
+    .centrado{
+      margin-left: auto;
+    }
+
+</style>  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+       
+        <a href="{% url 'home' %}"> <img src="{% static '/mainpage/assets/img/logo.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li>
+          <li><a class="nav-link scrollto" href="#services">Benefícios</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Clientes</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipa</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+          <li><a href="./login/"><button class="btn btn-primary" type="submit">Login</button></a></li>
+       
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+        <a href="https://twitter.com/Plcount1" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/plcount.coimbra/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/plcount/?hl=pt" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/plcount-plcount-427648212/ " target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Bem-vindos à <span>PLCount</span></h1>
+      <h2>Conte connosco para vos ajudar a controlar os fluxos de pessoas</h2>
+      <a href="#what-we-do" class="btn-get-started scrollto">Saiba mais</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= O que fazemos ======= -->
+    <section id="what-we-do" class="what-we-do">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>O Que Fazemos</h2>
+          <p>Nós na PLCount oferecemos um conjunto de serviços que ajuda a melhorar o desempenho do seu estabelecimento</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-camera-movie"></i></div>
+              <h4>Monotorizar o Fluxo de Pessoas</h4>
+              <p>Atrtvés de uma câmara e com a ajuda de um algoritmo, efetuamos o controla e a contagem de entradas e saídas</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Organização dos Dados</h4>
+              <p>Colocamos todos os dados para os nossos clientes numa dashboard de maneira organizada</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Relatório de Análise de Estatística</h4>
+              <p>Efetuamos relatórios com base nos dados de cada cliente, para depois auxiliá-lo de como gerir o seu estabelecimento</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- O que fazemos -->
+
+    <!-- ======= Sobre nós ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src= "{% static 'mainpage/assets/img/about.jpg' %}"class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 ml-5">
+            <h3>Sobre Nós</h3>
+            <p>
+              Esta empresa nasceu no âmbito da unidade curricular, de Projeto e Desenvolvimento Informático, do terceiro ano da licenciatura de Informática de Gestão, foi nos propostos a realização de um projeto académico. Com este projeto pretendemos desenvolver uma solução atual para o problema da monitorização do fluxo de pessoas em estabelecimentos. Esta ideia surgiu devido a pandemia Covid 19, nos dias de hoje a maioria dos estabelecimentos são obrigados por lei a ter um limite de capacidade de pessoas dentro dos estabelecimentos, muitas empresas do setor terciário utilizam os recursos humanos para efetuarem o controlo e a contagem de entradas e saídas de pessoas. No entanto, este sistema tem uma boa utilidade fora do contexto pandémico, trazendo assim inúmeras vantagens para as empresas/instituições.
+            </p>
+            
+            <div class="row icon-boxes">
+              <div class="col-md-6 ml-5">
+                <i class="bx bx-receipt"></i>
+                <h4>O Mercado da PLCount</h4>
+                <p>Na atualidade, existe um mercado para este tipo de sistemas com pouca concorrência em Portugal, logo achamos que este projeto tem um forte potencial para ingressar como um negócio nesta indústria. A nossa empresa PLCOUNT, por ser uma das poucas empresas portuguesas nesta área, que se encontra em evolução, pode assim no futuro competir no mercado global.</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <i class="bx bx-group"></i>
+                <h4>Potencias Clientes</h4>
+                <p>O principal objetivo do nosso sistema é ser uma aplicação acessível para pequenas, médias e grandes empresas ou até mesmo instituições publicas como escolas, hospitais, bibliotecas, museus...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- Sobre nós -->
+
+  
+
+   
+
+    <!-- ======= Benefícios ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Benefícios</h2>
+          <p>
+          No nosso projeto, queremos que os nossos clientes desfrutam dos nossos benefícios para melhorar o serviço dos seus estabelecimentos. Os benefícios principais são:
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4>Ter uma perspetiva do número de indivíduos que frequentam um estabelecimento em cada dia, semana ou mês</h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4>Controlo da quantidade de pessoas dentro do estabelecimento e evitar a sobrelotação de estabelecimentos</h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4>Permite um melhor controle e gestão da carga horaria/folgas dos funcionários</h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bx bx-dollar"></i>
+              <h4>Redução do custo nos recursos humanos</h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bx bx-walk"></i>
+              <h4>Identificações de padrões em percursos</h4>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="icon-box">
+              <i class="bx bx-cctv"></i>
+              <h4>Reutilização das câmaras de vigilância clientes</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- Benefícios -->
+
+
+<!-- ======= Clientes ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Os Nossos Clientes</h2>
+          
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Ótimo serviço e a instalação rápida sem custos adicionais. Tiramos proveito do relatório de análise desenvolvido pela PLCount para melhorar o desempenho nos nossos estabelecimentos.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'mainpage/assets/img/clientes/super.jpg' %}" class="testimonial-img" alt="">
+                <h3>Supermercado</h3>
+                
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Instalação fácil e serviço excelente. Os dados que a PLCount nos fornece são claros e estão demonstrados numa dashboard de forma organizado. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'mainpage/assets/img/clientes/forum.jpg' %}" class="testimonial-img" alt="">
+                <h3>Centro Comercial</h3>
+               
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Reutilizamos o nosso equipamento de vigilância para usufruirmos do serviço. Plataforma fácil de usar. Ajudou-nos a melhor o nosso atendimento ao cliente. 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'mainpage/assets/img/clientes/hospital.jpg' %}" class="testimonial-img" alt="">
+                <h3>Hospital</h3>
+                
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  A PLCount ajudou-nos imenso a melhorar a gestão dos nossos funcionários e a evitar a sobrelotação nos nossos estabelecimentos.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'mainpage/assets/img/clientes/museu.jpg' %}" class="testimonial-img" alt="">
+                <h3>Museu</h3>
+               
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Graças ao excelente serviço oferecido pela PLCount, conseguimos conhecer um valor exato de pessoas que frequentavam o nosso estabelecimento e como resultado melhoramos a gestão de tempo dos nossos funcionários.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'mainpage/assets/img/clientes/escola.jpg' %}" class="testimonial-img" alt="">
+                <h3>Universidade</h3>
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Cliente -->
+ 
+
+    <!-- ======= Equipa ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Equipa</h2>
+         
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static '/mainpage/assets/img/jp.png' %}" alt="">
+              <h4>João Marques</h4>
+              <span>Fundador</span>
+              <p>
+                Aluno do Instituto Superior de Contabilidade e Admnistração de Coimbra, no curso de Informática de Gestão
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/Plcount1" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/plcount.coimbra/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/plcount/?hl=pt" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plcount-plcount-427648212/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static '/mainpage/assets/img/jorgexu.png' %}" alt="">
+              <h4>Jorge Xu</h4>
+              <span>Fundador</span>
+              <p>
+                Aluno do Instituto Superior de Contabilidade e Admnistração de Coimbra, no curso de Informática de Gestão
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/Plcount1" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/plcount.coimbra/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/plcount/?hl=pt" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plcount-plcount-427648212/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static '/mainpage/assets/img/pedro.png' %}" alt="">
+              <h4>Pedro Figueiredo</h4>
+              <span>Fundador</span>
+              <p>
+                Aluno do Instituto Superior de Contabilidade e Admnistração de Coimbra, no curso de Informática de Gestão
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/Plcount1" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/plcount.coimbra/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/plcount/?hl=pt" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/plcount-plcount-427648212/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Equipa -->
+
+    <!-- ======= Contato ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contato</h2>
+          <p>Entre em contato comnosco, para esclarecemos qualquer questão, enviar-nos feedback ou pedir o nosso serviço</p>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Localização</h4>
+                  <p>Rua de Coimbra</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>plcountig@gmail.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Telemóvel</h4>
+                  <p>978000111</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="card mt-5">
+          <div class="card-header formheadercolor">
+            <strong>Formulario</strong> 
+          </div>
+        </div>
+          <div class="card-body card-block formbodycolor">
+            <form action="{% url 'home' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label class="formtextcolor">Nome</label> 
+                  <br>
+                  {{form.name}}
+                </div>
+                <div class="form-group">
+                  <label class="formtextcolor">Correio eletronico</label>
+                  <br>
+                  {{form.email}}
+                </div>
+                <div class="form-group">
+                    <label class="formtextcolor">Assunto</label>
+                    <br>
+                    {{ form.title }}
+                </div>
+                <div class="form-group">
+                    <label class="formtextcolor">Mensagem</label>
+                    <br>
+                    {{ form.message }}
+                </div>
+                {% if messages %}
+                <ul class="messages mt-3">
+                {% for message in messages %}
+                 <a  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </a>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                <button  class="btn btn-primary btn-lg mt-5">Enviar</button> 
+              
+
+            </form>
+        </div>
+      </div>
+    </section><!-- Contato -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>PLCount</h3>
+            <p>
+              Rua de Coimbra<br>
+              <strong>Telénóvel:</strong>978000111<br>
+              <strong>Email:</strong> plcountig@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+       
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+           
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>PLCount</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/Plcount1" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/plcount.coimbra/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/plcount/?hl=pt" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/plcount-plcount-427648212/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'mainpage/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'mainpage/assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'mainpage/assets/js/main.js' %}"></script>
